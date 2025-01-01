@@ -1,7 +1,7 @@
 {
     "id": "copyhelper",
     "name": "Copy Helper",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "minAppVersion": "0.12.0",
     "description": "a plugin to copy file name or file name with extension",
     "author": "Kaipard",
