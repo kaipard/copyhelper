@@ -1,0 +1,10 @@
+# 忽略 dist 文件夹及其内容
+dist/
+
+# 忽略 Node.js 的 node_modules 文件夹
+node_modules/
+
+# 忽略 IDE 或编辑器的配置文件
+.vscode/
+.idea/
+.vs/
