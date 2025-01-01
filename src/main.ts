@@ -31,31 +31,29 @@ export default class CopyHelper extends Plugin {
     await this.loadTranslations();
 
     this.registerEvent(
-      this.app.workspace.on('file-menu', ((menu: Menu, file: TFile) => {
-        menu.addItem((item) => {
-          item
-            .setTitle(i18next.t('Copyfilename'))
-            .setIcon('clipboard')
-            .onClick(() => {
-              if (file instanceof TFile) {
+      this.app.workspace.on('file-menu', (menu: Menu, file: unknown) => {
+        if (file instanceof TFile) {
+          menu.addItem((item) => {
+            item
+              .setTitle(i18next.t('Copyfilename'))
+              .setIcon('clipboard')
+              .onClick(() => {
                 const fileName = file.basename;
                 this.copyToClipboard(fileName);
-              }
-            });
-        });
+              });
+          });
 
-        menu.addItem((item) => {
-          item
-            .setTitle(i18next.t('Copyfilenamewithextension'))
-            .setIcon('clipboard')
-            .onClick(() => {
-              if (file instanceof TFile) {
+          menu.addItem((item) => {
+            item
+              .setTitle(i18next.t('Copyfilenamewithextension'))
+              .setIcon('clipboard')
+              .onClick(() => {
                 const fileName = file.name;
                 this.copyToClipboard(fileName);
-              }
-            });
-        });
-      }) as any)
+              });
+          });
+        }
+      })
     );
   }
 } 
