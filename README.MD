@@ -2,7 +2,7 @@
 
 ### 简介
 
-CopyHelper 是一个允许用户通过右键菜单快速复制文件名或带扩展名的文件名的插件。
+通过右键单击上下文菜单来快速复制带或不带扩展名的文件名称。
 
 ### 功能
 
@@ -33,7 +33,7 @@ CopyHelper 是一个允许用户通过右键菜单快速复制文件名或带扩
 
 ### Introduction
 
-CopyHelper is a plugin that allows users to quickly copy file names or file names with extensions via the context menu.
+Quickly copy file name with or without its extension via the right-click context menu.
 
 ### Features
 
@@ -48,7 +48,7 @@ CopyHelper is a plugin that allows users to quickly copy file names or file name
 
 ### Usage
 
-- Right-click on a file and select "Copy File Name" or "Copy File Name (with extension)" to copy the file name to the clipboard.
+- Right-click on a file and select "Copy file name" or "Copy file name (with extension)" to copy the file name to the clipboard.
 
 ### Contribution
 
